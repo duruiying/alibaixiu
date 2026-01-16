@@ -1,0 +1,208 @@
+@media screen and (min-width:1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: #fff;
+}
+
+/* 左侧 */
+header {
+    padding-left: 0 !important;
+}
+
+.logo {
+    background-color: #429ad9;
+
+}
+
+.logo img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.logo span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav {
+    background-color: #eee;
+    border-bottom: 1px solid #eee;
+}
+
+@media screen and (max-width: 767px) {
+
+    .news li {
+        width: 50% !important;
+    }
+
+    .news li:nth-child(1) {
+        width: 100% !important;
+    }
+
+    .nav ul li a {
+        padding-left: 5px !important;
+    }
+
+    .nav ul li a {
+        font-size: 14px !important;
+    }
+
+    .list h3 {
+        font-size: 14px;
+    }
+}
+
+/* 当我们进入 小屏幕 还有 超小屏幕的时候 我们nav里面 li浮动起来 并且宽度为20%
+ */
+@media screen and (max-width:991px) {
+    .nav li {
+        float: left;
+        width: 20%;
+        font-size: 14px;
+    }
+
+    article {
+        margin-top: 10px;
+    }
+}
+
+.nav ul li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav ul li a::before {
+    /* vertical-align: middle; */
+    padding-right: 5px;
+}
+
+/* 中间模块 */
+.news ul li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.news ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.news ul li:nth-child(1) {
+    width: 50%;
+    height: 266px;
+}
+
+.news ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.news ul li p {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    color: #fff;
+}
+
+.news ul li:nth-child(1) p {
+    line-height: 40px;
+    font-size: 18px;
+}
+
+/* 中间下方 */
+.list .row {
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    color: #666;
+}
+
+.list p {
+    margin-top: 10px;
+}
+
+.list img {
+    width: 100%;
+}
+
+/* 右侧 */
+.banner img {
+    width: 100%;
+}
+
+.hot {
+    display: block;
+    padding: 0 10px 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.hot span {
+    border-radius: 0;
+}
+
+.hot h4 {
+    color: #429ad9;
+}
+
+.hot p {
+    font-size: 12px;
+    color: #666;
+
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    line-height: 100px;
+    margin-top: 10px;
+    background-color: #ccc;
+    height: 100px;
+}
